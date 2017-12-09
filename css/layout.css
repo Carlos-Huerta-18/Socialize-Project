@@ -1,45 +1,214 @@
+@import url('nav.css');
+
 body{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 nav{
     
 }
 
-section{
-    
+h3{
+    color: black;
+    position: relative;
+    z-index: 4;
 }
 
-#menu{
+.main{
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 700px;
+}
+
+.intro_block{
+    width: 50%;
+    height: 300px;
+    background-color: darkgray;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.blue-overlay{
+    background-color: #041424;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: .8;
+}
+
+.blue-gradient{
+    background: blue; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, blue, black); /* Standard syntax */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    opacity: .5;
+}
+
+.intro_block_alt{
     background-color: aqua;
 }
 
-.nav_wrap{
-    display: table;
-    padding: 20px 0 20px 0;
-    margin: 0 auto 0 auto;
-    
+.clear{
+    clear: both;
 }
 
-.item{
-    display: inline-block;
-}
-
-.item_text:hover{
-    background-color: azure;
-    cursor: pointer;
-}
-
-.item_text{
-    padding: 20px;
-    
-}
-
-#intro{
+section{
     width: 100%;
-    background-color: lightgray;
     position: relative;
+    height: 600px;
+}
+
+.text_layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+    width: 400px;
+    height: 150px;
+}
+
+.split-right-v{
+    border-right: solid 1px #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.split-left-v{
+    border-left: solid 1px #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.split-top{
+    border-top: solid 1px #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.split-bottom{
+    border-bottom: solid 1px #fff;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.w-33{
+    position: relative;
+    width: 33.33%;
+}
+
+.w-66{
+    position: relative;
+    width: 66.5%;
+}
+
+.w-25{
+    position: relative;
+    width: 25%;
+}
+
+.w-50{
+    position: relative;
+    width: 50%;
+}
+
+.w-75{
+    position: relative;
+    width: 75%;
+}
+
+.w-100{
+    position: relative;
+    width: 100%;
+}
+
+.col{
+    margin-top: 2%;
+    height: 90%;
+    float: left;
+}
+
+
+/*Intro Section*/
+#intro{
+    background-color: lightgray;
+}
+    
+    
+#block1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#block2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+#block3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#block4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#icon{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50px;
+    width: 100px;
+    padding-bottom: 20px;
+    margin: auto auto 10px auto;
+    overflow: hidden
+}
+
+#intro .text_layer h3{
+    font-size: 22px;
+    font-weight: 200;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin-bottom: 10px;
+    margin: 60px auto auto auto;
+    color: white;
+    text-align: center;
+}
+
+#intro .text_layer h3.alt{
+    font-size: 22px;
+    font-weight: 200;
+    width: 60%;
+    border-top: 1px solid white;
+    border-bottom: 0;
+    padding-top: 10px;
+    margin: auto auto auto auto;
 }
 
 #icon{
@@ -57,52 +226,82 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    z-index: 9;
 }
 
-.main{
-    background-color: #ffffff;
+
+/*Fact Section*/
+
+#fact{
+    background-color: #BC1717;
+}
+
+#fact .text_layer{
     width: 100%;
-    min-height: 700px;
 }
 
-.intro_block{
-    width: 50%;
-    height: 300px;
-    background-color: darkgray;
-    float: left;
+#fact h3{
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    height: 200px;
 }
 
-.intro_block_alt{
-    background-color: aqua;
+#fact h1{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin: 40px 10px 10px 10px; /* trbl */
 }
 
-.clear{
-    clear: both;
+#fact p{
+    color: #fff;
+    font-size: 22px;
+    padding: 30px;
+    font-weight: 100;
+    text-align: center;
 }
 
-#block1{
-    background-image:url('/images/museum.JPG');
+/*About Section*/
+
+#about{
+    background-image:url('/images/working.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#block2{
-    background-image:url('/images/sonic.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-#block3{
-    background-image:url('/images/computer.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#about h1, #about h2, #about h3, #about h4, #about p{
+    color: #fff;
+    position: relative;
+    z-index: 2;
 }
 
-#block4{
-    background-image:url('/images/son.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#about h4, #about p{
+    text-align: right; 
+    padding: 0 50px 0 50px;
+}
+
+#about h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+/*Contact Section*/
+
+#contact{
+    background-color: #1695ac;
+}
+
+.content {
+    padding: 50px;
+}
+
+.text-input {
+    margin: 2px;
+    padding: 5px;
+    width: 300px;
 }
